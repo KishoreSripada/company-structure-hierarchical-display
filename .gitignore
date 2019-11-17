@@ -16,3 +16,9 @@ org.eclipse.*
 .idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml
 displaystructure.iml
 .vscode/launch.json
+.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml
+.idea/libraries/Maven__org_objenesis_objenesis_2_2.xml
+.idea/libraries/Maven__org_powermock_powermock_core_1_6_5.xml
+.idea/libraries/Maven__org_powermock_powermock_module_junit4_1_6_5.xml
+.idea/libraries/Maven__org_powermock_powermock_module_junit4_common_1_6_5.xml
+.idea/libraries/Maven__org_powermock_powermock_reflect_1_6_5.xml

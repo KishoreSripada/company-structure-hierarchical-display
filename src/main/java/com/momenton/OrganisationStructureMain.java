@@ -1,6 +1,7 @@
 package com.momenton;
 
 import com.momenton.beans.Employee;
+import com.momenton.display.DisplayCompanyHierarchy;
 import com.momenton.beans.Company;
 import com.momenton.exceptions.EmployeeDataException;
 import com.momenton.exceptions.NoManagerException;
@@ -19,5 +20,7 @@ public class OrganisationStructureMain {
         } catch (EmployeeDataException | NoManagerException e) {
             e.printStackTrace();
         }
+        DisplayCompanyHierarchy hierarchy = new DisplayCompanyHierarchy();
+        hierarchy.displayCompanyHierarchy(company);
     }
 }

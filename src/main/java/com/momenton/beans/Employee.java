@@ -26,7 +26,15 @@ public class Employee {
     }
 
     public Employee(Integer id, Integer managerId, 
-    String name, boolean isCEO) {
+    String name, boolean isCEO) throws EmployeeDataException {
+
+        if (isCEO && managerId != null) {
+			throw new EmployeeDataException("The CEO doesn't have a manager");
+		}
+        if (null != name && name.isEmpty()) {
+            throw new EmployeeDataException("Every Employee should have a name");
+        }
+
         this.id = id;
         this.managerId = managerId;
         this.name = name;
